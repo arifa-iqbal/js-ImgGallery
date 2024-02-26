@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.myWork {
+  margin-top: 20px;
+}
+.myWork h1 {
+  text-align: center;
+  color: orangered;
+  background-color: black;
+  width: 50%;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  width: 120px;
+  height: 600px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-left: 20px;
+  transition: all 0.5s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.card:last-child {
+  margin-right: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+.card.active {
+  flex: 1;
+  border-radius: 40px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.card.active img {
+  filter: unset;
+}
+/*  */
